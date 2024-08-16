@@ -39,7 +39,7 @@ const Login: React.FC = () => {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-700 text-left"
             >
               Email Address
             </label>
@@ -53,7 +53,7 @@ const Login: React.FC = () => {
               placeholder="you@example.com"
             />
             {errors.email && (
-              <p className="mt-1 text-sm text-red-600">
+              <p className="mt-1 text-sm text-red-600 text-left">
                 {errors.email.message}
               </p>
             )}
@@ -62,7 +62,7 @@ const Login: React.FC = () => {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-700 text-left"
             >
               Password
             </label>
@@ -76,7 +76,7 @@ const Login: React.FC = () => {
               placeholder="••••••••"
             />
             {errors.password && (
-              <p className="mt-1 text-sm text-red-600">
+              <p className="mt-1 text-sm text-red-600 text-left">
                 {errors.password.message}
               </p>
             )}
